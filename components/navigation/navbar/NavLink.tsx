@@ -65,6 +65,6 @@ const NavLinks = ({ isMobileNav = false }: { isMobileNav?: boolean }) => {
       })}
     </>
   );
-};
+};  
 
 export default NavLinks;
