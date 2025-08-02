@@ -19,9 +19,10 @@ const Home = async () => {
       </section>
       <section className="mt-11 ">
         <LocalSearch
-        imgSrc='/icons/search.svg'
-        placeholder ="Search Questions..."
-        
+          route="/"
+          imgSrc="/icons/search.svg"
+          placeholder="Search Questions..."
+          otherClasses="flex-1"
         />
       </section>
       HomeFilter
