@@ -1,14 +1,15 @@
 import Link from "next/link";
 
-import { auth } from "@/auth";
 import LocalSearch from "@/components/search/LocalSearch";
 import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
 
-const Home = async () => {
-  const session = await auth();
-  console.log(session);
+interface SearchParams {
+  searchParams: Promise<{ [key: string]: string }>;
+}
 
+const Home = async ({ searchParams }: SearchParams) => {
+  const { query } = await searchParams;
   return (
     <>
       <section className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
