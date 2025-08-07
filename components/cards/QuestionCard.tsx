@@ -3,12 +3,12 @@ import React from "react";
 
 import { Question } from "@/types/global";
 
-// import ROUTES from "@/constants/routes";
-// import { getTimeStamp } from "@/lib/utils";
+import ROUTES from "@/constants/routes";
+import { getTimeStamp } from "@/lib/utils";
 
-// import TagCard from "./TagCard";
-// import Metric from "../Metric";
-// import { Question, Tag } from "@/types/global";
+import TagCard from "./TagCard";
+import Metric from "../Metric";
+import { Question, Tag } from "@/types/global";
 
 interface Props {
   question: Question;
