@@ -11,12 +11,7 @@ import Metric from "../Metric";
 interface Props {
   question: Question;
 }
-const question = {
-  _id: "1",
-  title: "How to use Next.js?",
-  content: "A beginner's guide to Next.js.",
-  tags: [{ _id: "1", name: "nextjs" }],
-};
+
 
 const QuestionCard = ({
   question: { _id, title, tags, author, createdAt, upvotes, answers, views },
