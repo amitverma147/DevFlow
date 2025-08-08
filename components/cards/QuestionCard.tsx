@@ -1,18 +1,22 @@
 import Link from "next/link";
 import React from "react";
 
-import { Question } from "@/types/global";
-
 import ROUTES from "@/constants/routes";
 import { getTimeStamp } from "@/lib/utils";
+import { Question, Tag } from "@/types/global";
 
 import TagCard from "./TagCard";
 import Metric from "../Metric";
-import { Question, Tag } from "@/types/global";
 
 interface Props {
   question: Question;
 }
+const question = {
+  _id: "1",
+  title: "How to use Next.js?",
+  content: "A beginner's guide to Next.js.",
+  tags: [{ _id: "1", name: "nextjs" }],
+};
 
 const QuestionCard = ({
   question: { _id, title, tags, author, createdAt, upvotes, answers, views },
